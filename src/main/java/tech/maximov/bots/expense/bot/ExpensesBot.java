@@ -27,16 +27,6 @@ public class ExpensesBot extends TelegramWebhookBot {
     }
 
     @Override
-    public String getBotToken() {
-        return botToken;
-    }
-
-    @Override
-    public BotApiMethod<?> onWebhookUpdateReceived(Update update) {
-        return messageProcessorFacade.handleUpdate(update);
-    }
-
-    @Override
     public String getBotPath() {
         return botPath;
     }
@@ -44,5 +34,15 @@ public class ExpensesBot extends TelegramWebhookBot {
     @Override
     public String getBotUsername() {
         return botUsername;
+    }
+
+    @Override
+    public String getBotToken() {
+        return botToken;
+    }
+
+    @Override
+    public BotApiMethod<?> onWebhookUpdateReceived(Update update) {
+        return messageProcessorFacade.handleUpdate(update);
     }
 }

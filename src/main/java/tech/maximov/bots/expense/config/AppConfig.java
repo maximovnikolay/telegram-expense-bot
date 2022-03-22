@@ -24,8 +24,8 @@ public class AppConfig {
 
         return new ExpensesBot(options,
                 messageProcessorFacade,
-                botConfig.getBotPath(),
-                botConfig.getBotUsername(),
+                botConfig.getWebHookPath(),
+                botConfig.getUserName(),
                 botConfig.getBotToken());
     }
 }

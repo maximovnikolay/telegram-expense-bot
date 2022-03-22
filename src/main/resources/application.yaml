@@ -4,9 +4,9 @@ pingtask:
   url: https://www.google.com
   period: 1200000
 telegrambot:
-  botUsername: ${BOT_NAME}
+  webHookPath: ${WEBHOOK_PATH}
+  userName: ${BOT_NAME}
   botToken: ${BOT_TOKEN}
-  botPath: ${BOT_PATH}
 apisearch:
   apiToken: ${GS_API_TOKEN}
   context: ${GS_API_CS}

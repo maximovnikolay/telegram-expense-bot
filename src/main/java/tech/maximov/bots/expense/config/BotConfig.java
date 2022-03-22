@@ -11,9 +11,10 @@ import org.telegram.telegrambots.bots.DefaultBotOptions;
 @Component
 @ConfigurationProperties(prefix = "telegrambot")
 public class BotConfig {
-    private String botPath;
-    private String botUsername;
+    private String webHookPath;
+    private String userName;
     private String botToken;
+
     private DefaultBotOptions.ProxyType proxyType;
     private String proxyHost;
     private int proxyPort;
