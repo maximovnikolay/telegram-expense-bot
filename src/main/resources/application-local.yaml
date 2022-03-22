@@ -1,0 +1,7 @@
+server:
+  port: 5000
+
+telegrambot:
+  proxyType: SOCKS5
+  proxyHost: localhost
+  proxyPort: 9150
