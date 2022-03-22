@@ -1,12 +1,9 @@
 server:
-  port: $PORT
-pingtask:
-  url: https://www.google.com
-  period: 1200000
+  port: 5000
 telegrambot:
-  userName: $BOT_NAME
-  botToken: $BOT_TOKEN
-  webHookPath: $WEBHOOK_PATH
+  webHookPath: ${WEBHOOK_PATH}
+  userName: ${BOT_NAME}
+  botToken: ${BOT_TOKEN}
 apisearch:
-  apiToken: $GS_API_TOKEN
-  context: $GS_API_CS
+  apiToken: ${GS_API_TOKEN}
+  context: ${GS_API_CS}
