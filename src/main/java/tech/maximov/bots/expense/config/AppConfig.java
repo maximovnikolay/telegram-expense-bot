@@ -8,6 +8,8 @@ import org.telegram.telegrambots.meta.ApiContext;
 import tech.maximov.bots.expense.bot.ExpensesBot;
 import tech.maximov.bots.expense.bot.MessageProcessorFacade;
 
+import java.util.Objects;
+
 @Configuration
 @RequiredArgsConstructor
 public class AppConfig {
@@ -18,9 +20,11 @@ public class AppConfig {
         DefaultBotOptions options = ApiContext
                 .getInstance(DefaultBotOptions.class);
 
-        options.setProxyHost(botConfig.getProxyHost());
-        options.setProxyPort(botConfig.getProxyPort());
-        options.setProxyType(botConfig.getProxyType());
+        if (Objects.nonNull(botConfig.getProxyType())) {
+            options.setProxyHost(botConfig.getProxyHost());
+            options.setProxyPort(botConfig.getProxyPort());
+            options.setProxyType(botConfig.getProxyType());
+        }
 
         return new ExpensesBot(options,
                 messageProcessorFacade,
