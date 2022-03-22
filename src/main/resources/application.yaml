@@ -1,0 +1,4 @@
+telegrambot:
+  userName: $BOT_NAME
+  botToken: $BOT_TOKEN
+  webHookPath: $WEBHOOK_PATH

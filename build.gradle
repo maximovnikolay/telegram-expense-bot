@@ -28,8 +28,8 @@ dependencies {
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
 
-    // telegram
-    implementation group: 'org.telegram', name: 'telegrambots-spring-boot-starter', version: '5.7.1'
+    implementation group: 'org.telegram', name: 'telegrambots-spring-boot-starter', version: '4.4.0.2'
+    implementation group: 'com.vdurmont', name: 'emoji-java', version: '5.1.1'
 
     // test
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
